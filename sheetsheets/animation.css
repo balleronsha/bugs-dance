@@ -1,0 +1,28 @@
+.sprite5 {
+  width: 770px;
+  height: 500px;
+  position: relative;
+  background-image: url('../images/sprite5.svg');
+  animation: smena 0.3s steps(1) infinite;
+}
+
+@keyframes smena {
+  0% {
+    background-position: -770px 0;
+  }
+  20% {
+    background-position: -1540px 0;
+  }
+  40% {
+    background-position: -2310px 0;
+  }
+  60% {
+    background-position: -3080px 0;
+  }
+  80% {
+    background-position: -3850px 0;
+  }
+  100% {
+    background-position: -3850px 0;
+  }
+}
