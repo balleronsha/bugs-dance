@@ -1,8 +1,203 @@
-.sprite5 {
+/* 1 box */
+.box-text1 {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  background-color: #000000;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.text1 {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 170px;
+  -webkit-text-stroke: 10px #ff2c73;
+  /* outside round можно ли это сделать*/
+  animation: box-text1 2s linear infinite;
+}
+@keyframes box-text1 {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 2 box */
+.bigbox2 {
+  background-color: #000000;
+  height: 347px;
+  display: flex;
+}
+.box2stars {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  display: flex; /* Добавляем flex-контейнер */
+  justify-content: space-between; /* Распределяем элементы с промежутками */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 5px;
+}
+
+.stars {
+  position: relative;
+  width: 300px;
+  animation: stars 4.5s linear infinite;
+}
+
+@keyframes stars {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.stars:hover {
+  animation: paused; /* Останавливаем анимацию */
+}
+.box2zuki {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex; /* Добавляем flex-контейнер */
+  justify-content: space-between; /* Распределяем элементы с промежутками */
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  gap: 10vw;
+}
+.zuki {
+  position: relative;
+  animation: zuki 2s ease-in-out infinite;
+}
+
+@keyframes zuki {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg); /* Исходное положение */
+  }
+  25% {
+    transform: translateX(-10px) translateY(-10px) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
+  }
+  50% {
+    transform: translateX(10px) translateY(10px) rotate(-5deg); /* Сдвиг вправо, вниз и вращение на -45° */
+  }
+  75% {
+    transform: translateX(-10px) translateY(-10px) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(0deg); /* Возвращаемся в исходное положение */
+  }
+}
+.zuki:hover {
+  animation: paused; /* Останавливаем анимацию */
+}
+/* 3 box */
+.bigbox3 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex; /* Добавляем flex-контейнер */
+  justify-content: space-between; /* Распределяем элементы с промежутками */
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  gap: 0;
+}
+
+.gipnoz {
+  width: 640px;
+  height: 640px;
+  position: relative;
+  background-image: url('../images/gipnoz.png');
+  background-repeat: no-repeat;
+  animation: gipnoz 0.8s steps(1) infinite;
+}
+@keyframes gipnoz {
+  0% {
+    background-position: 0 0;
+  }
+  5.56% {
+    background-position: -640px 0;
+  }
+  11.11% {
+    background-position: -1280px 0;
+  }
+  16.67% {
+    background-position: -1920px 0;
+  }
+  22.22% {
+    background-position: -2560px 0;
+  }
+  27.78% {
+    background-position: -3200px 0;
+  }
+  33.33% {
+    background-position: -3840px 0;
+  }
+  38.89% {
+    background-position: -4480px 0;
+  }
+  44.44% {
+    background-position: -5120px 0;
+  }
+  50.00% {
+    background-position: -5760px 0;
+  }
+  55.56% {
+    background-position: -6400px 0;
+  }
+  61.11% {
+    background-position: -7040px 0;
+  }
+  66.67% {
+    background-position: -7680px 0;
+  }
+  72.22% {
+    background-position: -8320px 0;
+  }
+  77.78% {
+    background-position: -8960px 0;
+  }
+  83.33% {
+    background-position: -9600px 0;
+  }
+  88.89% {
+    background-position: -10240px 0;
+  }
+  94.44% {
+    background-position: -10880px 0;
+  }
+  100% {
+    background-position: -11520px 0;
+  }
+}
+
+.imgtext2 {
+  position: relative; /* Устанавливает контейнер как опорный для абсолютного позиционирования */
+}
+
+.text2 {
+  position: absolute; /* Позволяет позиционировать текст внутри родителя */
+  top: 50%; /* Центровка по вертикали */
+  left: 50%; /* Центровка по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвиг для точной центровки */
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 80px;
+  color: #ff2c73;
+  -webkit-text-stroke: 10px #000000; /* Обводка текста */
+  text-align: left; /* Текст выровнен по центру */
+  border-radius: 15px; /* Закругленные края элемента */
+}
+
+/* .sprite5 {
   width: 770px;
   height: 500px;
   position: relative;
   background-image: url('../images/sprite5.svg');
+  background-repeat: no-repeat;
   animation: smena 0.3s steps(1) infinite;
 }
 
@@ -25,4 +220,4 @@
   100% {
     background-position: -3850px 0;
   }
-}
+} */
