@@ -21,7 +21,7 @@
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-200%);
   }
 }
 
@@ -102,7 +102,6 @@
   justify-content: space-between; /* Распределяем элементы с промежутками */
   margin-left: auto;
   margin-right: auto;
-  position: absolute;
   gap: 0;
 }
 
@@ -187,11 +186,191 @@
   font-weight: bold;
   font-size: 80px;
   color: #ff2c73;
-  -webkit-text-stroke: 10px #000000; /* Обводка текста */
+  -webkit-text-stroke: 5px #000000; /* Обводка текста */
   text-align: left; /* Текст выровнен по центру */
   border-radius: 15px; /* Закругленные края элемента */
 }
 
+.pachki {
+  width: 1280px;
+  height: 450px;
+  position: relative;
+  background-image: url('../images/pachki.png');
+  background-repeat: no-repeat;
+  animation: pachkianim 0.6s steps(1) infinite;
+}
+@keyframes pachkianim {
+  0% {
+    background-position: 0 0;
+  }
+  7.692% {
+    background-position: -1280px 0;
+  }
+  15.384% {
+    background-position: -2560px 0;
+  }
+  23.076% {
+    background-position: -3840px 0;
+  }
+  30.768% {
+    background-position: -5120px 0;
+  }
+  38.460% {
+    background-position: -6400px 0;
+  }
+  46.152% {
+    background-position: -7680px 0;
+  }
+  53.844% {
+    background-position: -8960px 0;
+  }
+  61.536% {
+    background-position: -10240px 0;
+  }
+  69.228% {
+    background-position: -11520px 0;
+  }
+  76.920% {
+    background-position: -12800px 0;
+  }
+  84.612% {
+    background-position: -14080px 0;
+  }
+  92.304% {
+    background-position: -15360px 0;
+  }
+  100% {
+    background-position: -16640px 0;
+  }
+}
+.bigbox3 {
+  background-color: #000000;
+  height: 640px;
+  display: flex;
+}
+.chtochto {
+  width: 640px;
+  height: 640px;
+  background-image: url('../images/chtochto.png');
+  background-repeat: no-repeat;
+  animation: chtochto 1.5s steps(1) infinite;
+}
+@keyframes chtochto {
+  0% {
+    background-position: 0 0;
+  }
+  2.7% {
+    background-position: -640px 0;
+  }
+  5.4% {
+    background-position: -1280px 0;
+  }
+  8.1% {
+    background-position: -1920px 0;
+  }
+  10.8% {
+    background-position: -2560px 0;
+  }
+  13.5% {
+    background-position: -3200px 0;
+  }
+  16.2% {
+    background-position: -3840px 0;
+  }
+  18.9% {
+    background-position: -4480px 0;
+  }
+  21.6% {
+    background-position: -5120px 0;
+  }
+  24.3% {
+    background-position: -5760px 0;
+  }
+  27% {
+    background-position: -6400px 0;
+  }
+  29.7% {
+    background-position: -7040px 0;
+  }
+  32.4% {
+    background-position: -7680px 0;
+  }
+  35.1% {
+    background-position: -8320px 0;
+  }
+  37.8% {
+    background-position: -8960px 0;
+  }
+  40.5% {
+    background-position: -9600px 0;
+  }
+  43.2% {
+    background-position: -10240px 0;
+  }
+  45.9% {
+    background-position: -10880px 0;
+  }
+  48.6% {
+    background-position: -11520px 0;
+  }
+  51.3% {
+    background-position: -12160px 0;
+  }
+  54% {
+    background-position: -12800px 0;
+  }
+  56.7% {
+    background-position: -13440px 0;
+  }
+  59.4% {
+    background-position: -14080px 0;
+  }
+  62.1% {
+    background-position: -14720px 0;
+  }
+  64.8% {
+    background-position: -15360px 0;
+  }
+  67.5% {
+    background-position: -16000px 0;
+  }
+  70.2% {
+    background-position: -16640px 0;
+  }
+  72.9% {
+    background-position: -17280px 0;
+  }
+  75.6% {
+    background-position: -17920px 0;
+  }
+  78.3% {
+    background-position: -18560px 0;
+  }
+  81% {
+    background-position: -19200px 0;
+  }
+  83.7% {
+    background-position: -19840px 0;
+  }
+  86.4% {
+    background-position: -20480px 0;
+  }
+  89.1% {
+    background-position: -21120px 0;
+  }
+  91.8% {
+    background-position: -21760px 0;
+  }
+  94.5% {
+    background-position: -22400px 0;
+  }
+  97.2% {
+    background-position: -23040px 0;
+  }
+  100% {
+    background-position: -23680px 0;
+  }
+}
 /* .sprite5 {
   width: 770px;
   height: 500px;
