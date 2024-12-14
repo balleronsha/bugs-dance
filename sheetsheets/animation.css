@@ -65,6 +65,7 @@
   }
 }
 .stars:hover {
+  background-image: url('../images/starshover.svg');
   animation: paused; /* Останавливаем анимацию */
 }
 .box2zuki {
@@ -95,14 +96,15 @@
   position: relative;
   width: 23.047vw;
   height: 19.757vw;
-  animation: zuki 2s ease-in-out infinite;
+  animation: zuki2 0.5s infinite;
 }
 .zuk3 {
   padding: 1%;
   position: relative;
+  align-items: center;
   width: 24.688vw;
   height: 24.688vw;
-  animation: zuki 2s ease-in-out infinite;
+  animation: zuki3 2s infinite;
 }
 
 @keyframes zuki1 {
@@ -123,24 +125,36 @@
   }
 }
 
-@keyframes zuki {
-  0% {
-    transform: translateX(0) translateY(0) rotate(0deg); /* Исходное положение */
+@keyframes zuki2 {
+  0%,
+  100% {
+    transform: scale(0.9); /* Исходный размер */
   }
   25% {
-    transform: translateX(-0.781vw) translateY(-0.781vw) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
+    transform: scale(1); /* Увеличение размера */
   }
   50% {
-    transform: translateX(0.781vw) translateY(0.781vw) rotate(-5deg); /* Сдвиг вправо, вниз и вращение на -45° */
-  }
-  75% {
-    transform: translateX(0.781vw) translateY(0.781vw) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
-  }
-  100% {
-    transform: translateX(0) translateY(0) rotate(0deg); /* Возвращаемся в исходное положение */
+    transform: scale(1.1); /* Увеличение размера */
   }
 }
-.zuki:hover {
+@keyframes zuki3 {
+  0%,
+  100% {
+    transform: translateX(0); /* Исходное положение */
+  }
+  25% {
+    transform: translateX(-5vw); /* Тряска влево */
+  }
+  50% {
+    transform: translateX(5vw); /* Тряска вправо */
+  }
+  75% {
+    transform: translateX(-5vw); /* Тряска влево */
+  }
+}
+.zuki1:hover,
+.zuki2:hover,
+.zuki3:hover {
   animation: paused; /* Останавливаем анимацию */
 }
 /* 3 box */
