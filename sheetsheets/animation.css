@@ -177,13 +177,13 @@
     background-position: -900vw 0;
   }
 }
-.gipnoz :hover {
+.gipnoz:hover {
   width: 50vw;
   height: 50vw;
   background-image: url('../images/gipnozhover.png'); /* Замените на путь к новому изображению */
   background-repeat: no-repeat;
   background-size: 900vw; /* Размеры для покадровой анимации */
-  animation: hoverAnimation 1s steps(1) infinite;
+  animation: hoverAnimation 0.6s steps(1) infinite;
 }
 @keyframes hoverAnimation {
   0% {
