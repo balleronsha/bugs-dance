@@ -1,32 +1,37 @@
 /* 1 box */
 .box-text1 {
-  overflow: hidden;
-  white-space: nowrap;
+  overflow: hidden; /* Скрываем выходящий текст */
+  white-space: nowrap; /* Запрещаем перенос строк */
   position: relative;
   background-color: #000000;
   height: 19.53vw;
   display: flex;
-  justify-content: center;
+  align-items: center; /* Центрируем текст по вертикали */
 }
+
 .text1 {
+  display: inline-block;
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 13.28vw;
-  -webkit-text-stroke: 0.781vw #ff2c73;
-  /* outside round можно ли это сделать*/
-  animation: box-text1 60s linear infinite;
+  color: #ff2c73;
+  font-size: 14.063vw;
+  animation: scroll-text 5s linear infinite;
 }
-@keyframes box-text1 {
+
+.text1 p {
+  display: inline-block;
+  margin-right: 5vw;
+}
+
+@keyframes scroll-text {
   0% {
-    transform: translateX(100vw);
+    transform: translateX(0); /* Начало движения */
   }
   100% {
-    transform: translateX(-500%);
+    transform: translateX(-100%); /* Уход всей строки */
   }
 }
-.text1 p {
-  width: 600%;
-}
+
 /* 2 box */
 .bigbox2 {
   background-color: #000000;
@@ -67,15 +72,55 @@
   white-space: nowrap;
   display: flex; /* Добавляем flex-контейнер */
   justify-content: space-between; /* Распределяем элементы с промежутками */
+  width: 100vw;
+  height: 25vw;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   gap: 10vw;
 }
-.zuki {
+.zuk1 {
+  justify-content: center; /* Горизонтальное выравнивание */
+  align-items: center; /* Вертикальное выравнивание */
+  height: 100vh;
+  padding: 1%;
+  width: 30.625vw;
+  height: 18.881vw;
+  margin-left: auto;
+  margin-right: auto;
+  animation: zuki1 2s ease-in-out infinite;
+}
+.zuk2 {
+  padding: 1%;
   position: relative;
+  width: 23.047vw;
+  height: 19.757vw;
   animation: zuki 2s ease-in-out infinite;
-  width: 33%;
+}
+.zuk3 {
+  padding: 1%;
+  position: relative;
+  width: 24.688vw;
+  height: 24.688vw;
+  animation: zuki 2s ease-in-out infinite;
+}
+
+@keyframes zuki1 {
+  0% {
+    transform: rotate(0deg); /* Начальная позиция */
+  }
+  20% {
+    transform: rotate(90deg); /* Плавный поворот на 90 градусов */
+  }
+  50% {
+    transform: rotate(0deg); /* Возврат в начальное положение */
+  }
+  80% {
+    transform: rotate(-90deg); /* Плавный поворот на -90 градусов */
+  }
+  100% {
+    transform: rotate(0deg); /* Возврат в начальное положение */
+  }
 }
 
 @keyframes zuki {
@@ -180,9 +225,9 @@
 .gipnoz:hover {
   width: 50vw;
   height: 50vw;
-  background-image: url('../images/gipnozhover.png'); /* Замените на путь к новому изображению */
+  background-image: url('../images/gipnozhover.png');
   background-repeat: no-repeat;
-  background-size: 900vw; /* Размеры для покадровой анимации */
+  background-size: 900vw;
   animation: hoverAnimation 0.6s steps(1) infinite;
 }
 @keyframes hoverAnimation {
@@ -258,11 +303,9 @@
   transform: translate(-50%, -50%); /* Сдвиг для точной центровки */
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 80px;
+  font-size: 6.25vw;
   color: #ff2c73;
-  -webkit-text-stroke: 5px #000000; /* Обводка текста */
-  text-align: left; /* Текст выровнен по центру */
-  border-radius: 15px; /* Закругленные края элемента */
+  text-align: left;
 }
 
 .pachki {
