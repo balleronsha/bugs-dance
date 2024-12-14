@@ -4,32 +4,35 @@
   white-space: nowrap;
   position: relative;
   background-color: #000000;
-  height: 250px;
+  height: 19.53vw;
   display: flex;
   justify-content: center;
 }
 .text1 {
   font-family: 'Helvetica Neue';
   font-weight: bold;
-  font-size: 170px;
-  -webkit-text-stroke: 10px #ff2c73;
+  font-size: 13.28vw;
+  -webkit-text-stroke: 0.781vw #ff2c73;
   /* outside round можно ли это сделать*/
-  animation: box-text1 2s linear infinite;
+  animation: box-text1 60s linear infinite;
 }
 @keyframes box-text1 {
   0% {
     transform: translateX(100vw);
   }
   100% {
-    transform: translateX(-200%);
+    transform: translateX(-500%);
   }
 }
-
+.text1 p {
+  width: 600%;
+}
 /* 2 box */
 .bigbox2 {
   background-color: #000000;
-  height: 347px;
+  height: 27.11vw;
   display: flex;
+  overflow: hidden;
 }
 .box2stars {
   overflow: hidden;
@@ -39,12 +42,12 @@
   justify-content: space-between; /* Распределяем элементы с промежутками */
   margin-left: auto;
   margin-right: auto;
-  gap: 5px;
+  gap: 0.4vw;
 }
 
 .stars {
   position: relative;
-  width: 300px;
+  width: 23.44vw;
   animation: stars 4.5s linear infinite;
 }
 
@@ -72,6 +75,7 @@
 .zuki {
   position: relative;
   animation: zuki 2s ease-in-out infinite;
+  width: 33%;
 }
 
 @keyframes zuki {
@@ -79,13 +83,13 @@
     transform: translateX(0) translateY(0) rotate(0deg); /* Исходное положение */
   }
   25% {
-    transform: translateX(-10px) translateY(-10px) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
+    transform: translateX(-0.781vw) translateY(-0.781vw) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
   }
   50% {
-    transform: translateX(10px) translateY(10px) rotate(-5deg); /* Сдвиг вправо, вниз и вращение на -45° */
+    transform: translateX(0.781vw) translateY(0.781vw) rotate(-5deg); /* Сдвиг вправо, вниз и вращение на -45° */
   }
   75% {
-    transform: translateX(-10px) translateY(-10px) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
+    transform: translateX(0.781vw) translateY(0.781vw) rotate(5deg); /* Сдвиг влево, вверх и вращение на 45° */
   }
   100% {
     transform: translateX(0) translateY(0) rotate(0deg); /* Возвращаемся в исходное положение */
@@ -106,75 +110,145 @@
 }
 
 .gipnoz {
-  width: 640px;
-  height: 640px;
+  width: 50vw;
+  height: 50vw;
   position: relative;
   background-image: url('../images/gipnoz.png');
   background-repeat: no-repeat;
-  animation: gipnoz 0.8s steps(1) infinite;
+  background-size: 900vw;
+  animation: gipnoz 1s steps(1) infinite;
 }
 @keyframes gipnoz {
   0% {
     background-position: 0 0;
   }
   5.56% {
-    background-position: -640px 0;
+    background-position: -50vw 0;
   }
   11.11% {
-    background-position: -1280px 0;
+    background-position: -100vw 0;
   }
   16.67% {
-    background-position: -1920px 0;
+    background-position: -150vw 0;
   }
   22.22% {
-    background-position: -2560px 0;
+    background-position: -200vw 0;
   }
   27.78% {
-    background-position: -3200px 0;
+    background-position: -250vw 0;
   }
   33.33% {
-    background-position: -3840px 0;
+    background-position: -300vw 0;
   }
   38.89% {
-    background-position: -4480px 0;
+    background-position: -350vw 0;
   }
   44.44% {
-    background-position: -5120px 0;
+    background-position: -400vw 0;
   }
   50.00% {
-    background-position: -5760px 0;
+    background-position: -450vw 0;
   }
   55.56% {
-    background-position: -6400px 0;
+    background-position: -500vw 0;
   }
   61.11% {
-    background-position: -7040px 0;
+    background-position: -550vw 0;
   }
   66.67% {
-    background-position: -7680px 0;
+    background-position: -600vw 0;
   }
   72.22% {
-    background-position: -8320px 0;
+    background-position: -650vw 0;
   }
   77.78% {
-    background-position: -8960px 0;
+    background-position: -700vw 0;
   }
   83.33% {
-    background-position: -9600px 0;
+    background-position: -750vw 0;
   }
   88.89% {
-    background-position: -10240px 0;
+    background-position: -800vw 0;
   }
   94.44% {
-    background-position: -10880px 0;
+    background-position: -850vw 0;
   }
   100% {
-    background-position: -11520px 0;
+    background-position: -900vw 0;
+  }
+}
+.gipnoz :hover {
+  width: 50vw;
+  height: 50vw;
+  background-image: url('../images/gipnozhover.png'); /* Замените на путь к новому изображению */
+  background-repeat: no-repeat;
+  background-size: 900vw; /* Размеры для покадровой анимации */
+  animation: hoverAnimation 1s steps(1) infinite;
+}
+@keyframes hoverAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  5.56% {
+    background-position: -50vw 0;
+  }
+  11.11% {
+    background-position: -100vw 0;
+  }
+  16.67% {
+    background-position: -150vw 0;
+  }
+  22.22% {
+    background-position: -200vw 0;
+  }
+  27.78% {
+    background-position: -250vw 0;
+  }
+  33.33% {
+    background-position: -300vw 0;
+  }
+  38.89% {
+    background-position: -350vw 0;
+  }
+  44.44% {
+    background-position: -400vw 0;
+  }
+  50.00% {
+    background-position: -450vw 0;
+  }
+  55.56% {
+    background-position: -500vw 0;
+  }
+  61.11% {
+    background-position: -550vw 0;
+  }
+  66.67% {
+    background-position: -600vw 0;
+  }
+  72.22% {
+    background-position: -650vw 0;
+  }
+  77.78% {
+    background-position: -700vw 0;
+  }
+  83.33% {
+    background-position: -750vw 0;
+  }
+  88.89% {
+    background-position: -800vw 0;
+  }
+  94.44% {
+    background-position: -850vw 0;
+  }
+  100% {
+    background-position: -900vw 0;
   }
 }
 
 .imgtext2 {
   position: relative; /* Устанавливает контейнер как опорный для абсолютного позиционирования */
+  width: 50vw;
+  height: 50vw;
 }
 
 .text2 {
@@ -192,8 +266,62 @@
 }
 
 .pachki {
-  width: 1280px;
-  height: 450px;
+  width: 100vw;
+  height: 35.156vw;
+  position: relative;
+  background-image: url('../images/pachki.png');
+  background-repeat: no-repeat;
+  background-size: 1300vw 35.156vw;
+  animation: pachkianim 0.5s steps(1) infinite;
+}
+
+@keyframes pachkianim {
+  0% {
+    background-position: 0 0;
+  }
+  7.692% {
+    background-position: -100vw 0;
+  }
+  15.384% {
+    background-position: -200vw 0;
+  }
+  23.076% {
+    background-position: -300vw 0;
+  }
+  30.768% {
+    background-position: -400vw 0;
+  }
+  38.460% {
+    background-position: -500vw 0;
+  }
+  46.152% {
+    background-position: -600vw 0;
+  }
+  53.844% {
+    background-position: -700vw 0;
+  }
+  61.536% {
+    background-position: -800vw 0;
+  }
+  69.228% {
+    background-position: -900vw 0;
+  }
+  76.920% {
+    background-position: -1000vw 0;
+  }
+  84.612% {
+    background-position: -1100vw 0;
+  }
+  92.304% {
+    background-position: -1200vw 0;
+  }
+  100% {
+    background-position: -1300vw 0;
+  }
+}
+/* .pachki {
+  width: 100vw;
+  height: 1000vw;
   position: relative;
   background-image: url('../images/pachki.png');
   background-repeat: no-repeat;
@@ -242,135 +370,138 @@
   100% {
     background-position: -16640px 0;
   }
-}
+} */
 .bigbox3 {
   background-color: #000000;
-  height: 640px;
+  height: px;
   display: flex;
 }
 .chtochto {
-  width: 640px;
-  height: 640px;
+  width: 50vw;
+  height: 50vw;
   background-image: url('../images/chtochto.png');
   background-repeat: no-repeat;
-  animation: chtochto 1.5s steps(1) infinite;
+  background-size: -1850vw 0;
+  animation: chtochto 0.5s steps(1) infinite;
 }
+
 @keyframes chtochto {
   0% {
     background-position: 0 0;
   }
   2.7% {
-    background-position: -640px 0;
+    background-position: -50vw 0;
   }
   5.4% {
-    background-position: -1280px 0;
+    background-position: -100vw 0;
   }
   8.1% {
-    background-position: -1920px 0;
+    background-position: -150vw 0;
   }
   10.8% {
-    background-position: -2560px 0;
+    background-position: -200vw 0;
   }
   13.5% {
-    background-position: -3200px 0;
+    background-position: -250vw 0;
   }
   16.2% {
-    background-position: -3840px 0;
+    background-position: -300vw 0;
   }
   18.9% {
-    background-position: -4480px 0;
+    background-position: -350vw 0;
   }
   21.6% {
-    background-position: -5120px 0;
+    background-position: -400vw 0;
   }
   24.3% {
-    background-position: -5760px 0;
+    background-position: -450vw 0;
   }
   27% {
-    background-position: -6400px 0;
+    background-position: -500vw 0;
   }
   29.7% {
-    background-position: -7040px 0;
+    background-position: -550vw 0;
   }
   32.4% {
-    background-position: -7680px 0;
+    background-position: -600vw 0;
   }
   35.1% {
-    background-position: -8320px 0;
+    background-position: -650vw 0;
   }
   37.8% {
-    background-position: -8960px 0;
+    background-position: -700vw 0;
   }
   40.5% {
-    background-position: -9600px 0;
+    background-position: -750vw 0;
   }
   43.2% {
-    background-position: -10240px 0;
+    background-position: -800vw 0;
   }
   45.9% {
-    background-position: -10880px 0;
+    background-position: -850vw 0;
   }
   48.6% {
-    background-position: -11520px 0;
+    background-position: -900vw 0;
   }
   51.3% {
-    background-position: -12160px 0;
+    background-position: -950vw 0;
   }
   54% {
-    background-position: -12800px 0;
+    background-position: -1000vw 0;
   }
   56.7% {
-    background-position: -13440px 0;
+    background-position: -1050vw 0;
   }
   59.4% {
-    background-position: -14080px 0;
+    background-position: -1100vw 0;
   }
   62.1% {
-    background-position: -14720px 0;
+    background-position: -1150vw 0;
   }
   64.8% {
-    background-position: -15360px 0;
+    background-position: -1200vw 0;
   }
   67.5% {
-    background-position: -16000px 0;
+    background-position: -1250vw 0;
   }
   70.2% {
-    background-position: -16640px 0;
+    background-position: -1300vw 0;
   }
   72.9% {
-    background-position: -17280px 0;
+    background-position: -1350vw 0;
   }
   75.6% {
-    background-position: -17920px 0;
+    background-position: -1400vw 0;
   }
   78.3% {
-    background-position: -18560px 0;
+    background-position: -1450vw 0;
   }
   81% {
-    background-position: -19200px 0;
+    background-position: -1500vw 0;
   }
   83.7% {
-    background-position: -19840px 0;
+    background-position: -1550vw 0;
   }
   86.4% {
-    background-position: -20480px 0;
+    background-position: -1600vw 0;
   }
   89.1% {
-    background-position: -21120px 0;
+    background-position: -1650vw 0;
   }
   91.8% {
-    background-position: -21760px 0;
+    background-position: -1700vw 0;
   }
   94.5% {
-    background-position: -22400px 0;
+    background-position: -1750vw 0;
   }
   97.2% {
-    background-position: -23040px 0;
+    background-position: -1800vw 0;
   }
   100% {
-    background-position: -23680px 0;
+    background-position: -1850vw 0;
   }
 }
+
 /* .sprite5 {
   width: 770px;
   height: 500px;
