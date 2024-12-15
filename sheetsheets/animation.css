@@ -43,8 +43,7 @@
   overflow: hidden;
   white-space: nowrap;
   position: relative;
-  display: flex; /* Добавляем flex-контейнер */
-  justify-content: space-between; /* Распределяем элементы с промежутками */
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   gap: 0.4vw;
@@ -65,14 +64,12 @@
   }
 }
 .stars:hover {
-  background-image: url('../images/starshover.svg');
-  animation: paused; /* Останавливаем анимацию */
+  animation-play-state: paused;
 }
 .box2zuki {
   overflow: hidden;
   white-space: nowrap;
-  display: flex; /* Добавляем flex-контейнер */
-  justify-content: space-between; /* Распределяем элементы с промежутками */
+  display: flex;
   width: 100vw;
   height: 25vw;
   margin-left: auto;
@@ -90,21 +87,6 @@
   margin-left: auto;
   margin-right: auto;
   animation: zuki1 2s ease-in-out infinite;
-}
-.zuk2 {
-  padding: 1%;
-  position: relative;
-  width: 23.047vw;
-  height: 19.757vw;
-  animation: zuki2 0.5s infinite;
-}
-.zuk3 {
-  padding: 1%;
-  position: relative;
-  align-items: center;
-  width: 24.688vw;
-  height: 24.688vw;
-  animation: zuki3 2s infinite;
 }
 
 @keyframes zuki1 {
@@ -124,7 +106,13 @@
     transform: rotate(0deg); /* Возврат в начальное положение */
   }
 }
-
+.zuk2 {
+  padding: 1%;
+  position: relative;
+  width: 23.047vw;
+  height: 19.757vw;
+  animation: zuki2 0.5s ease-in-out infinite;
+}
 @keyframes zuki2 {
   0%,
   100% {
@@ -136,6 +124,16 @@
   50% {
     transform: scale(1.1); /* Увеличение размера */
   }
+}
+.zuk3 {
+  padding: 1%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+
+  width: 24.688vw;
+  height: 24.688vw;
+  animation: zuki3 2s ease-in-out infinite;
 }
 @keyframes zuki3 {
   0%,
@@ -155,14 +153,13 @@
 .zuki1:hover,
 .zuki2:hover,
 .zuki3:hover {
-  animation: paused; /* Останавливаем анимацию */
+  animation: paused;
 }
 /* 3 box */
 .bigbox3 {
   overflow: hidden;
   white-space: nowrap;
-  display: flex; /* Добавляем flex-контейнер */
-  justify-content: space-between; /* Распределяем элементы с промежутками */
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   gap: 0;
@@ -303,25 +300,77 @@
     background-position: -900vw 0;
   }
 }
-
+/* 1 див - все вместе прописываю общие св-ва */
 .imgtext2 {
-  position: relative; /* Устанавливает контейнер как опорный для абсолютного позиционирования */
+  display: flex;
   width: 50vw;
   height: 50vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* обои текстурка */
+.zulwalp {
+  position: absolute;
+  z-index: 2;
+}
+/* обводка + текст */
+.vodka1 {
+  margin-top: 13vw;
+  margin-left: 5vw;
+  position: absolute;
+  z-index: 3;
+  animation: bounce1 3s infinite ease-in-out;
+}
+@keyframes bounce1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(3vw, -1vw);
+  }
+  25% {
+    transform: translate(5vw, -2vw);
+  }
+  37.5% {
+    transform: translate(4vw, -7vw);
+  }
+  50% {
+    transform: translate(-2vw, -13vw);
+  }
+  62.5% {
+    transform: translate(-4vw, -12vw);
+  }
+  75% {
+    transform: translate(-5vw, -10vw);
+  }
+  87.5% {
+    transform: translate(-2vw, 6vw);
+  }
+  100% {
+    transform: translate(3vw, 12vw);
+  }
 }
 
+/* исключительно обводка */
+.obvodkablack1 {
+  position: absolute;
+  width: 41.016vw;
+  height: 25vw;
+  z-index: 4;
+}
+/* исключительно блок с текстом */
 .text2 {
-  position: absolute; /* Позволяет позиционировать текст внутри родителя */
-  top: 50%; /* Центровка по вертикали */
-  left: 50%; /* Центровка по горизонтали */
-  transform: translate(-50%, -50%); /* Сдвиг для точной центровки */
+  margin-left: 0.5vw;
+  position: absolute;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 6.25vw;
   color: #ff2c73;
-  text-align: left;
+  z-index: 5;
 }
 
+/* 3 блок  */
 .pachki {
   width: 100vw;
   height: 35.156vw;
@@ -329,7 +378,7 @@
   background-image: url('../images/pachki.png');
   background-repeat: no-repeat;
   background-size: 1300vw 35.156vw;
-  animation: pachkianim 0.5s steps(1) infinite;
+  animation: pachkianim 2s steps(1) infinite;
 }
 
 @keyframes pachkianim {
@@ -376,58 +425,12 @@
     background-position: -1300vw 0;
   }
 }
-/* .pachki {
-  width: 100vw;
-  height: 1000vw;
-  position: relative;
-  background-image: url('../images/pachki.png');
-  background-repeat: no-repeat;
-  animation: pachkianim 0.6s steps(1) infinite;
+.pachki:hover {
+  animation: none; /* Полностью останавливаем анимацию */
+  background-position: 0 0; /* Возвращаемся к первому кадру */
+  background-image: url('../images/pachkihover.png'); /* Сменяем изображение */
+  background-size: 100vw 35.156vw; /* Устанавливаем размер в 1 кадр для hover */
 }
-@keyframes pachkianim {
-  0% {
-    background-position: 0 0;
-  }
-  7.692% {
-    background-position: -1280px 0;
-  }
-  15.384% {
-    background-position: -2560px 0;
-  }
-  23.076% {
-    background-position: -3840px 0;
-  }
-  30.768% {
-    background-position: -5120px 0;
-  }
-  38.460% {
-    background-position: -6400px 0;
-  }
-  46.152% {
-    background-position: -7680px 0;
-  }
-  53.844% {
-    background-position: -8960px 0;
-  }
-  61.536% {
-    background-position: -10240px 0;
-  }
-  69.228% {
-    background-position: -11520px 0;
-  }
-  76.920% {
-    background-position: -12800px 0;
-  }
-  84.612% {
-    background-position: -14080px 0;
-  }
-  92.304% {
-    background-position: -15360px 0;
-  }
-  100% {
-    background-position: -16640px 0;
-  }
-} */
 .bigbox3 {
   background-color: #000000;
   height: px;
