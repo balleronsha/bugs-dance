@@ -351,7 +351,9 @@
     transform: translate(3vw, 12vw);
   }
 }
-
+.vodka1:hover {
+  animation: bounce1 1s infinite ease-in-out;
+}
 /* исключительно обводка */
 .obvodkablack1 {
   position: absolute;
