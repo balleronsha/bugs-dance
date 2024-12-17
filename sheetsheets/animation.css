@@ -656,7 +656,7 @@
   background-image: url('../images/tancyhover.png');
   background-repeat: no-repeat;
   background-size: 1850vw 50vw;
-  animation: tancyhover 0.6s steps(1) infinite;
+  animation: tancyhover 5s steps(1) infinite;
 }
 @keyframes tancyhover {
   0% {
