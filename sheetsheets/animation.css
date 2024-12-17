@@ -351,9 +351,9 @@
     transform: translate(3vw, 12vw);
   }
 }
-.vodka1:hover {
+/* .vodka1:hover {
   animation: bounce1 1s infinite ease-in-out;
-}
+} */
 /* исключительно обводка */
 .obvodkablack1 {
   position: absolute;
@@ -919,3 +919,316 @@
     transform: rotate(360deg);
   }
 }
+/* 8 блок большой */
+.bigbox8 {
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  width: 100vw;
+  height: 39.063vw;
+  background-color: #000000;
+}
+/* 1 див - все вместе прописываю общие св-ва */
+.imgtext4 {
+  display: flex;
+  width: 61.328vw;
+  height: 39.063vw;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+/* обои текстурка */
+.text4fon {
+  width: 61.328vw;
+  height: 39.063vw;
+  position: absolute;
+  z-index: 2;
+}
+/* обводка + текст */
+.vodka3 {
+  margin-top: 8vw;
+  margin-left: 8vw;
+  position: absolute;
+  z-index: 3;
+  animation: zoomText 2s ease-in-out infinite;
+}
+
+/* исключительно обводка */
+.obvodkablack3 {
+  position: absolute;
+  width: 37.031vw;
+  height: 18.75vw;
+  z-index: 4;
+}
+/* исключительно блок с текстом */
+
+.text4 {
+  margin-top: 0vw;
+  margin-left: 1vw;
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 6.25vw;
+  color: #ff2c73;
+  z-index: 5;
+}
+
+@keyframes zoomText {
+  0% {
+    transform: scale(0.8);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  40% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  80% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+.balletgirl {
+  width: 40.078vw;
+  height: 39.063vw;
+  background-image: url('../images/balletgirl.png');
+  background-repeat: no-repeat;
+  background-size: 801.563vw 39.063vw;
+  animation: gogirl 3s steps(1) infinite;
+}
+@keyframes gogirl {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: -40.078vw 0;
+  }
+  10% {
+    background-position: -80.156vw 0;
+  }
+  15% {
+    background-position: -120.234vw 0;
+  }
+  20% {
+    background-position: -160.312vw 0;
+  }
+  25% {
+    background-position: -200.39vw 0;
+  }
+  30% {
+    background-position: -240.468vw 0;
+  }
+  35% {
+    background-position: -280.546vw 0;
+  }
+  40% {
+    background-position: -320.624vw 0;
+  }
+  45% {
+    background-position: -360.702vw 0;
+  }
+  50% {
+    background-position: -400.78vw 0;
+  }
+  55% {
+    background-position: -440.858vw 0;
+  }
+  60% {
+    background-position: -480.936vw 0;
+  }
+  65% {
+    background-position: -521.014vw 0;
+  }
+  70% {
+    background-position: -561.092vw 0;
+  }
+  75% {
+    background-position: -601.17vw 0;
+  }
+  80% {
+    background-position: -641.248vw 0;
+  }
+  85% {
+    background-position: -681.326vw 0;
+  }
+  90% {
+    background-position: -721.404vw 0;
+  }
+  95% {
+    background-position: -761.482vw 0;
+  }
+  100% {
+    background-position: -801.563vw 0;
+  }
+}
+.balletgirl:hover {
+  width: 40.078vw;
+  height: 39.063vw;
+  background-image: url('../images/gogirlhover.png');
+  background-repeat: no-repeat;
+  background-size: 801.563vw 39.063vw;
+  animation: hovergo 5s steps(1) infinite;
+}
+
+@keyframes hovergo {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: -40.078vw 0;
+  }
+  10% {
+    background-position: -80.156vw 0;
+  }
+  15% {
+    background-position: -120.234vw 0;
+  }
+  20% {
+    background-position: -160.312vw 0;
+  }
+  25% {
+    background-position: -200.39vw 0;
+  }
+  30% {
+    background-position: -240.468vw 0;
+  }
+  35% {
+    background-position: -280.546vw 0;
+  }
+  40% {
+    background-position: -320.624vw 0;
+  }
+  45% {
+    background-position: -360.702vw 0;
+  }
+  50% {
+    background-position: -400.78vw 0;
+  }
+  55% {
+    background-position: -440.858vw 0;
+  }
+  60% {
+    background-position: -480.936vw 0;
+  }
+  65% {
+    background-position: -521.014vw 0;
+  }
+  70% {
+    background-position: -561.092vw 0;
+  }
+  75% {
+    background-position: -601.17vw 0;
+  }
+  80% {
+    background-position: -641.248vw 0;
+  }
+  85% {
+    background-position: -681.326vw 0;
+  }
+  90% {
+    background-position: -721.404vw 0;
+  }
+  95% {
+    background-position: -761.482vw 0;
+  }
+  100% {
+    background-position: -801.563vw 0;
+  }
+}
+
+.podval {
+  width: 100vw;
+  height: 13.438vw;
+  background-color: #000000;
+  overflow: hidden; /* Скрывает выходящий за пределы контент */
+  position: relative;
+}
+
+.ura {
+  display: flex; /* Выстраиваем текст в строку */
+  width: 200%; /* Удваиваем ширину для плавной прокрутки */
+  height: 13.438vw;
+  background-color: #000000;
+  animation: konets 10s linear infinite;
+}
+
+.txt1,
+.txt2,
+.txt3 {
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 2.344vw;
+  color: #ff2c73;
+  margin: 5vw; /* Отступы между элементами */
+  white-space: nowrap; /* Запрещаем перенос строк */
+}
+
+@keyframes konets {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* .podval {
+  width: 100vw;
+  height: 13.438vw;
+  background-color: #000000;
+}
+.ura {
+  width: 100vw;
+  height: 13.438vw;
+  background-color: #000000;
+  animation: konets 5s linear infinite;
+}
+.txt1,
+.txt2,
+.txt3 {
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 2.344vw;
+  color: #ff2c73;
+}
+.txt1 {
+  margin-top: 5vw;
+  margin-left: 2vw;
+}
+.txt2 {
+  margin-top: 5vw;
+  margin-left: 30vw;
+}
+.txt3 {
+  margin-top: 7.35vw;
+  margin-left: 77vw;
+}
+@keyframes konets {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+} */
