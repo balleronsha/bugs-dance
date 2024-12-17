@@ -650,7 +650,130 @@
     background-position: -1850vw 0;
   }
 }
-
+.chtochto:hover {
+  width: 50vw;
+  height: 50vw;
+  background-image: url('../images/tancyhover.png');
+  background-repeat: no-repeat;
+  background-size: 1850vw 50vw;
+  animation: tancyhover 0.6s steps(1) infinite;
+}
+@keyframes tancyhover {
+  0% {
+    background-position: 0 0;
+  }
+  2.7% {
+    background-position: -50vw 0;
+  }
+  5.4% {
+    background-position: -100vw 0;
+  }
+  8.1% {
+    background-position: -150vw 0;
+  }
+  10.8% {
+    background-position: -200vw 0;
+  }
+  13.5% {
+    background-position: -250vw 0;
+  }
+  16.2% {
+    background-position: -300vw 0;
+  }
+  18.9% {
+    background-position: -350vw 0;
+  }
+  21.6% {
+    background-position: -400vw 0;
+  }
+  24.3% {
+    background-position: -450vw 0;
+  }
+  27% {
+    background-position: -500vw 0;
+  }
+  29.7% {
+    background-position: -550vw 0;
+  }
+  32.4% {
+    background-position: -600vw 0;
+  }
+  35.1% {
+    background-position: -650vw 0;
+  }
+  37.8% {
+    background-position: -700vw 0;
+  }
+  40.5% {
+    background-position: -750vw 0;
+  }
+  43.2% {
+    background-position: -800vw 0;
+  }
+  45.9% {
+    background-position: -850vw 0;
+  }
+  48.6% {
+    background-position: -900vw 0;
+  }
+  51.3% {
+    background-position: -950vw 0;
+  }
+  54% {
+    background-position: -1000vw 0;
+  }
+  56.7% {
+    background-position: -1050vw 0;
+  }
+  59.4% {
+    background-position: -1100vw 0;
+  }
+  62.1% {
+    background-position: -1150vw 0;
+  }
+  64.8% {
+    background-position: -1200vw 0;
+  }
+  67.5% {
+    background-position: -1250vw 0;
+  }
+  70.2% {
+    background-position: -1300vw 0;
+  }
+  72.9% {
+    background-position: -1350vw 0;
+  }
+  75.6% {
+    background-position: -1400vw 0;
+  }
+  78.3% {
+    background-position: -1450vw 0;
+  }
+  81% {
+    background-position: -1500vw 0;
+  }
+  83.7% {
+    background-position: -1550vw 0;
+  }
+  86.4% {
+    background-position: -1600vw 0;
+  }
+  89.1% {
+    background-position: -1650vw 0;
+  }
+  91.8% {
+    background-position: -1700vw 0;
+  }
+  94.5% {
+    background-position: -1750vw 0;
+  }
+  97.2% {
+    background-position: -1800vw 0;
+  }
+  100% {
+    background-position: -1850vw 0;
+  }
+}
 .bigbox6 {
   width: 100vw;
   height: 31.25vw;
@@ -741,7 +864,7 @@
   }
 }
 .krug1:hover {
-  animation: krug1animhov 2s linear infinite;
+  animation: krug1animhov 6s linear infinite;
 }
 @keyframes krug1animhov {
   0% {
@@ -778,6 +901,17 @@
   animation: bukashkafonanim 2s linear infinite;
 }
 @keyframes bukashkafonanim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.bukashkafon:hover {
+  animation: bukhov 7s linear infinite;
+}
+@keyframes bukhov {
   0% {
     transform: rotate(0deg);
   }
