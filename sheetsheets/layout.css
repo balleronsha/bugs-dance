@@ -223,7 +223,7 @@ body {
   overflow: hidden;
 }
 .bigbox6 {
-  width: 100vw;
+  width: 170vw;
   height: 31.25vw;
   background-color: #000000;
   position: absolute;
@@ -364,7 +364,7 @@ body {
 .ura {
   display: flex; /* Выстраиваем текст в строку */
   align-items: flex-end;
-  width: 100%; /* Удваиваем ширину для плавной прокрутки */
+  width: 121vw; /* Удваиваем ширину для плавной прокрутки */
   height: 13.438vw;
   background-color: #000000;
 }
