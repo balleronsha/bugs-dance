@@ -54,7 +54,7 @@ body {
   position: absolute;
   gap: 10vw;
 }
-/* написать марджины */
+
 .zuk1 {
   justify-content: center;
   align-items: center;
@@ -101,6 +101,7 @@ body {
   background-repeat: no-repeat;
   background-size: 900vw;
 }
+
 /* 1 див - все вместе прописываю общие св-ва */
 .imgtext2 {
   display: flex;
@@ -115,31 +116,51 @@ body {
   position: absolute;
   z-index: 2;
 }
-/* обводка + текст */
-.vodka1 {
+/* мухи */
+.muha-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Скрываем элементы за границами */
+  z-index: 3;
+}
+.muhaaaaaa {
+  width: 6.25vw;
+  height: 6.25vw;
+  position: relative;
+  z-index: 4;
+}
+/* исключительно блок с текстом */
+.text11 {
   margin-top: 13vw;
   margin-left: 5vw;
   position: absolute;
   z-index: 3;
-  animation: bounce1 3s infinite ease-in-out;
-}
-/* исключительно обводка */
-.obvodkablack1 {
-  position: absolute;
-  width: 41.016vw;
-  height: 25vw;
-  z-index: 4;
-}
-/* исключительно блок с текстом */
-.text2 {
-  margin-left: 0.5vw;
+  animation: bounce1 4s infinite ease-in-out;
+
   position: absolute;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 6.25vw;
   color: #ff2c73;
-  z-index: 5;
+  z-index: 6;
+  background-color: #000000;
 }
+.text12 {
+  margin-top: 23vw;
+  margin-left: 8vw;
+  position: absolute;
+  z-index: 3;
+  animation: bounce2 2s infinite ease-in-out;
+  position: absolute;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  font-size: 6.25vw;
+  color: #ff2c73;
+  z-index: 6;
+  background-color: #000000;
+}
+
 /* 4 блок  */
 .pachki {
   width: 100vw;
@@ -305,7 +326,8 @@ body {
   display: flex;
   width: 61.328vw;
   height: 39.063vw;
-  position: relative;
+  background-image: url('../images/text4fon.png');
+  background-size: contain;
   overflow: hidden;
   z-index: 1;
 }
@@ -318,11 +340,8 @@ body {
 }
 /* обводка + текст */
 .vodka3 {
-  margin-top: 8vw;
-  margin-left: 8vw;
   position: absolute;
   z-index: 3;
-  animation: zoomText 2s ease-in-out infinite;
 }
 
 /* исключительно обводка */
@@ -335,14 +354,17 @@ body {
 /* исключительно блок с текстом */
 
 .text4 {
-  margin-top: 0vw;
-  margin-left: 1vw;
-  position: absolute;
   font-family: 'Helvetica Neue';
   font-weight: bold;
   font-size: 6.25vw;
   color: #ff2c73;
-  z-index: 5;
+  position: relative;
+  z-index: 2;
+}
+.text4 p {
+  padding: 0.9vw 1.6vw;
+  background-color: #000000;
+  position: absolute;
 }
 .balletgirl {
   width: 40.078vw;

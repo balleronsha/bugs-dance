@@ -1,0 +1,24 @@
+/* @media screen and (max-width: ) {
+
+  .box-text1 {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: #000000;
+    height: 48.309vw;
+
+    display: flex;
+    align-items: center;
+  }
+}
+.text1 {
+  display: inline-block;
+  font-family: 'Helvetica Neue';
+  font-weight: bold;
+  color: #ff2c73;
+  font-size: 48.309vw;
+}
+.text1 p {
+  display: inline-block;
+  margin-right: 5vw;
+} */

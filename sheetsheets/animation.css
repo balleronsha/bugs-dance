@@ -1,5 +1,5 @@
 .text1 {
-  animation: scroll-text 5s linear infinite;
+  animation: scroll-text 10s linear infinite;
 }
 @keyframes scroll-text {
   0% {
@@ -148,6 +148,20 @@
     background-position: -900vw 0;
   }
 }
+.muhaaaaaa p:nth-of-type(1) {
+  left: 10vw;
+  animation: muha1 2s ease infinite -5s;
+}
+@keyframes muha1 {
+  0% {
+    top: -20vw;
+    transform: rotate(15deg);
+  }
+  100% {
+    top: 150%;
+    transform: rotate(-334deg);
+  }
+}
 .gipnoz:hover {
   width: 50vw;
   height: 50vw;
@@ -216,10 +230,6 @@
   }
 }
 
-/* обводка + текст */
-.vodka1 {
-  animation: bounce1 3s infinite ease-in-out;
-}
 @keyframes bounce1 {
   0% {
     transform: translate(0, 0);
@@ -231,10 +241,10 @@
     transform: translate(5vw, -2vw);
   }
   37.5% {
-    transform: translate(4vw, -7vw);
+    transform: translate(10vw, -7vw);
   }
   50% {
-    transform: translate(-2vw, -13vw);
+    transform: translate(-2vw, -14vw);
   }
   62.5% {
     transform: translate(-4vw, -12vw);
@@ -243,16 +253,49 @@
     transform: translate(-5vw, -10vw);
   }
   87.5% {
-    transform: translate(-2vw, 6vw);
+    transform: translate(-2vw, 18vw);
   }
   100% {
     transform: translate(3vw, 12vw);
   }
 }
-.vodka1:hover {
-  animation: bounce1 1s infinite ease-in-out;
+@keyframes bounce2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(3vw, 18 vw);
+  }
+  25% {
+    transform: translate(-2vw, 10vw);
+  }
+  37.5% {
+    transform: translate(-5vw, -10vw);
+  }
+  50% {
+    transform: translate(-4vw, -12vw);
+  }
+  62.5% {
+    transform: translate(-2vw, -14vw);
+  }
+  75% {
+    transform: translate(4vw, -7vw);
+  }
+  87.5% {
+    transform: translate(7vw, -2vw);
+  }
+  100% {
+    transform: translate(3vw, -5vw);
+  }
 }
-
+.text11:hover {
+  color: #9ce158;
+  animation-play-state: paused;
+}
+.text12:hover {
+  color: #9ce158;
+  animation-play-state: paused;
+}
 /* 4 блок  */
 .pachki {
   animation: pachkianim 2s steps(1) infinite;
@@ -731,9 +774,9 @@
 }
 /* 8 блок большой */
 /* обводка + текст */
-.vodka3 {
+/* .vodka3 {
   animation: zoomText 2s ease-in-out infinite;
-}
+} */
 @keyframes zoomText {
   0% {
     transform: scale(0.8);
@@ -923,3 +966,98 @@
     transform: translateX(-100%);
   }
 }
+
+.text4 p:nth-of-type(1) {
+  left: 10vw;
+  animation: textFall1 2s ease infinite -5s;
+}
+.text4 p:nth-of-type(2) {
+  left: 20vw;
+  animation: textFall1 6s ease infinite;
+}
+.text4 p:nth-of-type(3) {
+  left: 10vw;
+  animation: textFall1 4s ease infinite -10s;
+}
+.text4 p:nth-of-type(4) {
+  left: 1vw;
+  animation: textFall2 3s ease infinite;
+}
+.text4 p:nth-of-type(5) {
+  left: 13vw;
+  animation: textFall2 7s ease infinite -3s;
+}
+.text4 p:nth-of-type(6) {
+  left: 2cqw;
+  animation: textFall3 3s ease infinite;
+}
+.text4 p:nth-of-type(7) {
+  left: 8vw;
+  animation: textFall3 5s ease infinite;
+}
+.text4 p:nth-of-type(8) {
+  left: 4vw;
+  animation: textFall3 6s ease infinite;
+}
+.text4 p:nth-of-type(9) {
+  left: 10vw;
+  animation: textFall3 7s ease infinite;
+}
+.text4 p:nth-of-type(10) {
+  left: -2vw;
+  animation: textFall3 5s ease infinite;
+}
+.text4 p:nth-of-type(11) {
+  left: -5vw;
+  animation: textFall4 3s ease infinite;
+}
+
+.text4 p:nth-of-type(12) {
+  left: 11vw;
+  animation: textFall4 6s ease infinite;
+}
+.text4 p:nth-of-type(13) {
+  left: 0vw;
+  animation: textFall3 6s ease infinite;
+}
+@keyframes textFall1 {
+  0% {
+    top: -20vw;
+    transform: rotate(15deg);
+  }
+  100% {
+    top: 150%;
+    transform: rotate(-334deg);
+  }
+}
+@keyframes textFall2 {
+  0% {
+    top: -40vw;
+    transform: rotate(-0deg);
+  }
+  100% {
+    top: 150%;
+    transform: rotate(500deg);
+  }
+}
+@keyframes textFall3 {
+  0% {
+    top: -60vw;
+    transform: rotate(10deg);
+  }
+  100% {
+    top: 150%;
+    transform: rotate(-500deg);
+  }
+}
+@keyframes textFall4 {
+  0% {
+    top: -80vw;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 150%;
+    transform: rotate(360deg);
+  }
+}
+/* АНИМАЦИЯ ДЛЯ АДАПТИВОК */
