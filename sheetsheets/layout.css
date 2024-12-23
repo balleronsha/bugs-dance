@@ -393,7 +393,7 @@ body {
   height: 39.063vw;
   background-image: url('../images/balletgirl.png');
   background-repeat: no-repeat;
-  background-size: 801.563vw 39.063vw;
+  background-size: 802vw 39vw;
   animation: gogirl 3s steps(1) infinite;
 }
 /* подвал */

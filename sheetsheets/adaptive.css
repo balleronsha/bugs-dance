@@ -207,14 +207,40 @@
   }
   .balletgirl {
     width: 100vw;
-    height: 98.857vw;
-    background-size: 2478.261vw 120.773vw;
+    height: 100vw;
+    background-size: 2028vw 100vw;
+    animation: gogirladapt 3s steps(1) infinite;
+  }
+  .balletgirl:hover {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../images/gogirlhover.png');
+    background-repeat: no-repeat;
+    background-size: 2028vw 100vw;
+    animation: hovergoadapt 3s steps(1) infinite;
   }
   .podval {
     width: 100vw;
-    height: 13.438vw;
+    height: 26vw;
     background-color: #000000;
     overflow: hidden; /* Скрывает выходящий за пределы контент */
     position: relative;
+  }
+  .ura {
+    display: flex; /* Выстраиваем текст в строку */
+    align-items: flex-end;
+    width: 200vw; /* Удваиваем ширину для плавной прокрутки */
+    height: 26vw;
+    background-color: #000000;
+  }
+  .txt1,
+  .txt2,
+  .txt3 {
+    font-family: 'Helvetica Neue';
+    font-weight: bold;
+    font-size: 4.6vw;
+    color: #ff2c73;
+    margin: 10w 12vw;
+    white-space: nowrap; /* Запрещаем перенос строк */
   }
 }

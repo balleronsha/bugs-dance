@@ -1713,6 +1713,71 @@
     background-position: -801.563vw 0;
   }
 }
+@keyframes gogirladapt {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: -101.39vw 0;
+  }
+  10% {
+    background-position: -202.78vw 0;
+  }
+  15% {
+    background-position: -304.17vw 0;
+  }
+  20% {
+    background-position: -405.56vw 0;
+  }
+  25% {
+    background-position: -506.95vw 0;
+  }
+  30% {
+    background-position: -608.34vw 0;
+  }
+  35% {
+    background-position: -709.73vw 0;
+  }
+  40% {
+    background-position: -811.12vw 0;
+  }
+  45% {
+    background-position: -912.51vw 0;
+  }
+  50% {
+    background-position: -1013.9vw 0;
+  }
+  55% {
+    background-position: -1115.29vw 0;
+  }
+  60% {
+    background-position: -1216.68vw 0;
+  }
+  65% {
+    background-position: -1318.07vw 0;
+  }
+  70% {
+    background-position: -1419.46vw 0;
+  }
+  75% {
+    background-position: -1520.85vw 0;
+  }
+  80% {
+    background-position: -1622.24vw 0;
+  }
+  85% {
+    background-position: -1723.63vw 0;
+  }
+  90% {
+    background-position: -1825.02vw 0;
+  }
+  95% {
+    background-position: -1926.41vw 0;
+  }
+  100% {
+    background-position: -2028vw 0;
+  }
+}
 
 .balletgirl:hover {
   width: 40.078vw;
@@ -1786,6 +1851,136 @@
   }
   100% {
     background-position: -801.563vw 0;
+  }
+}
+@keyframes gogirl {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: -40.078vw 0;
+  }
+  10% {
+    background-position: -80.156vw 0;
+  }
+  15% {
+    background-position: -120.234vw 0;
+  }
+  20% {
+    background-position: -160.312vw 0;
+  }
+  25% {
+    background-position: -200.39vw 0;
+  }
+  30% {
+    background-position: -240.468vw 0;
+  }
+  35% {
+    background-position: -280.546vw 0;
+  }
+  40% {
+    background-position: -320.624vw 0;
+  }
+  45% {
+    background-position: -360.702vw 0;
+  }
+  50% {
+    background-position: -400.78vw 0;
+  }
+  55% {
+    background-position: -440.858vw 0;
+  }
+  60% {
+    background-position: -480.936vw 0;
+  }
+  65% {
+    background-position: -521.014vw 0;
+  }
+  70% {
+    background-position: -561.092vw 0;
+  }
+  75% {
+    background-position: -601.17vw 0;
+  }
+  80% {
+    background-position: -641.248vw 0;
+  }
+  85% {
+    background-position: -681.326vw 0;
+  }
+  90% {
+    background-position: -721.404vw 0;
+  }
+  95% {
+    background-position: -761.482vw 0;
+  }
+  100% {
+    background-position: -801.563vw 0;
+  }
+}
+@keyframes hovergoadapt {
+  0% {
+    background-position: 0 0;
+  }
+  5% {
+    background-position: -101.39vw 0;
+  }
+  10% {
+    background-position: -202.78vw 0;
+  }
+  15% {
+    background-position: -304.17vw 0;
+  }
+  20% {
+    background-position: -405.56vw 0;
+  }
+  25% {
+    background-position: -506.95vw 0;
+  }
+  30% {
+    background-position: -608.34vw 0;
+  }
+  35% {
+    background-position: -709.73vw 0;
+  }
+  40% {
+    background-position: -811.12vw 0;
+  }
+  45% {
+    background-position: -912.51vw 0;
+  }
+  50% {
+    background-position: -1013.9vw 0;
+  }
+  55% {
+    background-position: -1115.29vw 0;
+  }
+  60% {
+    background-position: -1216.68vw 0;
+  }
+  65% {
+    background-position: -1318.07vw 0;
+  }
+  70% {
+    background-position: -1419.46vw 0;
+  }
+  75% {
+    background-position: -1520.85vw 0;
+  }
+  80% {
+    background-position: -1622.24vw 0;
+  }
+  85% {
+    background-position: -1723.63vw 0;
+  }
+  90% {
+    background-position: -1825.02vw 0;
+  }
+  95% {
+    background-position: -1926.41vw 0;
+  }
+  100% {
+    background-position: -2028vw 0;
   }
 }
 /* подвал */
