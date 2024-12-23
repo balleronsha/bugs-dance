@@ -43,6 +43,7 @@ body {
 .stars {
   position: relative;
   width: 23.44vw;
+  animation: stars 4.5s linear infinite;
 }
 .box2zuki {
   white-space: nowrap;
@@ -64,6 +65,7 @@ body {
   height: 18.881vw;
   margin-left: 1vw;
   margin-top: auto;
+  animation: zuki1 2s ease-in-out infinite;
 }
 .zuk2 {
   padding: 1%;
@@ -72,6 +74,7 @@ body {
   height: 19.757vw;
   margin-left: -6vw;
   margin-top: auto;
+  animation: zuki2 0.5s ease-in-out infinite;
 }
 .zuk3 {
   padding: 1%;
@@ -82,6 +85,7 @@ body {
   height: 24.688vw;
   margin-left: auto;
   margin-top: auto;
+  animation: zuki3 2s ease-in-out infinite;
 }
 /* 3 box */
 .bigbox3 {
@@ -100,6 +104,7 @@ body {
   background-image: url('../images/gipnoz.png');
   background-repeat: no-repeat;
   background-size: 900vw;
+  animation: gipnoz 1s steps(1) infinite;
 }
 
 /* 1 див - все вместе прописываю общие св-ва */
@@ -110,25 +115,26 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  background-image: url(../images/text2.png);
+  background-repeat: no-repeat;
+  background-size: 50vw 50vw;
 }
-/* обои текстурка */
-.zulwalp {
-  position: absolute;
-  z-index: 2;
-}
+
 /* мухи */
 .muha-container {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Скрываем элементы за границами */
+  overflow: hidden;
   z-index: 3;
 }
 .muhaaaaaa {
   width: 6.25vw;
   height: 6.25vw;
-  position: relative;
+  position: absolute;
   z-index: 4;
+  top: -20vw;
+  animation: fall 5s ease-in-out infinite;
 }
 /* исключительно блок с текстом */
 .text11 {
@@ -137,7 +143,6 @@ body {
   position: absolute;
   z-index: 3;
   animation: bounce1 4s infinite ease-in-out;
-
   position: absolute;
   font-family: 'Helvetica Neue';
   font-weight: bold;
@@ -169,6 +174,7 @@ body {
   background-image: url('../images/pachki.png');
   background-repeat: no-repeat;
   background-size: 1300vw 35.156vw;
+  animation: pachkianim 2s steps(1) infinite;
 }
 /* 5 блок большой */
 .bigbox5 {
@@ -196,12 +202,28 @@ body {
   position: absolute;
   z-index: 2;
 }
+.dguki-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+.crash {
+  top: -20vw;
+  width: 6.25vw;
+  height: 6.25vw;
+  position: absolute;
+  z-index: 4;
+  animation: fall 5s ease-in-out infinite;
+}
 /* обводка + текст */
 .vodka2 {
   margin-top: 15vw;
   margin-left: 4vw;
   position: absolute;
   z-index: 3;
+  animation: shake 1s ease-in-out infinite;
 }
 
 /* исключительно обводка */
@@ -223,13 +245,13 @@ body {
   color: #ff2c73;
   z-index: 5;
 }
-
 .chtochto {
   width: 50vw;
   height: 50vw;
   background-image: url('../images/chtochto.png');
   background-repeat: no-repeat;
   background-size: 1850vw 50vw;
+  animation: chtochto 1s steps(1) infinite;
 }
 /* 6 box */
 .strax {

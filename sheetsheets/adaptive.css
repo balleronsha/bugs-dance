@@ -1,24 +1,220 @@
-/* @media screen and (max-width: ) {
-
+@media screen and (max-width: 500px) {
+  .gipnoz:hover {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../images/gipnozhover.png');
+    background-repeat: no-repeat;
+    background-size: 1800vw;
+    animation: hoverAnimationadapt 0.6s steps(1) infinite;
+  }
+  .chtochto:hover {
+    width: 100vw;
+    height: 100vw;
+    background-image: url('../images/tancyhover.png');
+    background-repeat: no-repeat;
+    background-size: 3700vw 100vw;
+    animation: tancyhoveradapt 5s steps(1) infinite;
+  }
+  .pachki:hover {
+    animation: none;
+    background-position: 0 0;
+    background-image: url('../images/pachkiadapthover.png');
+    background-size: 100vw 35.156vw;
+  }
+  /* 1 блок */
   .box-text1 {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    background-color: #000000;
-    height: 48.309vw;
+    height: 48.3vw;
+  }
+  .text1 {
+    font-size: 48.309vw;
+  }
+  /* 2 блок */
+  .bigbox2 {
+    height: 100vw;
+  }
+  .box2stars {
+    flex-wrap: wrap;
+  }
+  .box2zuki {
+    flex-wrap: wrap;
+  }
+  .zuk1 {
+    margin-left: 13vw;
+    margin-top: auto;
+    width: 73.671vw;
+    height: 50.053vw;
+  }
+  .zuk2 {
+    margin-left: 13vw;
+    margin-top: -17vw;
+    width: 62.56vw;
+    height: 53.63vw;
+  }
+  .zuk3 {
+    display: none;
+  }
+  .stars {
+    width: 49vw;
+    justify-content: center;
+  }
+  /* 3 блок */
+  .bigbox3 {
+    flex-direction: column;
+  }
 
+  .gipnoz {
+    width: 100vw;
+    height: 100vw;
+    background-size: 1800vw;
+    animation: gipnozadapt 1s steps(1) infinite;
+  }
+  .imgtext2 {
+    width: 100vw;
+    height: 100vw;
+    background-size: 100vw 100vw;
+  }
+  .muhaaaaaa {
+    width: 12.077vw;
+    height: 12.077vw;
+  }
+  .text11 {
+    margin-top: 30vw;
+    margin-left: 17vw;
+    font-size: 10.87vw;
+    animation: bounce1adapt 4s infinite ease-in-out;
+  }
+  .text12 {
+    margin-top: 70vw;
+    margin-left: 30vw;
+    font-size: 10.87vw;
+    animation: bounce2adapt 2s infinite ease-in-out;
+  }
+  .pachki {
+    width: 100vw;
+    height: 100vw;
+    rotate: 90deg;
+    transform: scale(3);
+    margin-left: -100vw;
+    margin-top: 100vw;
+    background-size: 1300vw 35.156vw;
+    animation: pachkianimadapt 2s steps(1) infinite;
+  }
+
+  .bigbox5 {
+    flex-direction: column;
+    margin-top: 100vw;
+  }
+  .imgtext3 {
+    width: 100vw;
+    height: 100vw;
+  }
+  .tancy {
+    height: 100vw;
+    width: 100vw;
+  }
+  .crash {
+    width: 9.662vw;
+    height: 9.662vw;
+  }
+  .vodka2 {
+    margin-top: 30vw;
+    margin-left: 10vw;
+    position: absolute;
+    z-index: 3;
+  }
+  .obvodkablack2 {
+    width: 77.5vw;
+    height: 44.751vw;
+  }
+  .text3 {
+    font-size: 10.87vw;
+  }
+  .chtochto {
+    width: 100vw;
+    height: 100vw;
+    background-size: 3700vw 100vw;
+    animation: chtochtoadapt 1s steps(1) infinite;
+  }
+  /* 6 box */
+  .strax {
+    width: 100vw;
+    height: 120.773vw;
+    flex-wrap: wrap;
+  }
+  .bigbox6 {
+    width: 100vw;
+    height: 120.773vw;
+    flex-wrap: wrap;
+  }
+  .wowstar1,
+  .wowstar2,
+  .wowstar3,
+  .wowstar4 {
+    display: inline-block;
+    width: 57.971vw;
+    height: 57.971vw;
+  }
+  .bigbox7 {
+    width: 100vw;
+    height: 198.698vw;
+    flex-direction: column;
+  }
+  .sprite5 {
+    display: none;
+  }
+  .ashkafon {
+    width: 100vw;
+    height: 140vw;
+  }
+  .krug1 {
+    width: 86.563vw;
+    height: 86.563vw;
+    margin-top: 6.5vw;
+    margin-left: 6.5vw;
+  }
+  .starfon {
+    width: 79.087vw;
+    height: 79.087vw;
+    margin-top: 9.7vw;
+    margin-left: 9vw;
+  }
+  .bukashkafon {
+    position: absolute;
+    width: 86.155vw;
+    height: 88.606vw;
+    margin-top: 5.2vw;
+    margin-left: 6.5vw;
+    z-index: 2;
+  }
+
+  /* 8 блок большой */
+  .bigbox8 {
+    flex-direction: column;
+    width: 100vw;
+    height: 164.251vw;
+  }
+  .imgtext4 {
     display: flex;
-    align-items: center;
+    width: 100vw;
+    height: 63.693vw;
+  }
+  .text4fon {
+    width: 100vw;
+    height: 63.693vw;
+  }
+  .text4 {
+    font-size: 11.111vw;
+  }
+  .balletgirl {
+    width: 100vw;
+    height: 98.857vw;
+    background-size: 2478.261vw 120.773vw;
+  }
+  .podval {
+    width: 100vw;
+    height: 13.438vw;
+    background-color: #000000;
+    overflow: hidden; /* Скрывает выходящий за пределы контент */
+    position: relative;
   }
 }
-.text1 {
-  display: inline-block;
-  font-family: 'Helvetica Neue';
-  font-weight: bold;
-  color: #ff2c73;
-  font-size: 48.309vw;
-}
-.text1 p {
-  display: inline-block;
-  margin-right: 5vw;
-} */
