@@ -138,7 +138,7 @@
   /* 6 box */
   .strax {
     width: 100vw;
-    height: 120.773vw;
+    height: 50vw;
     flex-wrap: wrap;
   }
   .bigbox6 {
@@ -151,12 +151,12 @@
   .wowstar3,
   .wowstar4 {
     display: inline-block;
-    width: 57.971vw;
-    height: 57.971vw;
+    width: 48vw;
+    height: 48vw;
   }
   .bigbox7 {
     width: 100vw;
-    height: 198.698vw;
+    height: 102vw;
     flex-direction: column;
   }
   .sprite5 {
