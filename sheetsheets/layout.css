@@ -3,6 +3,9 @@ body {
   background-color: rgb(255, 255, 255);
   font-family: 'Helvetica Neue', Helvetica;
 }
+body {
+  cursor: url(../images/hover.png), auto;
+}
 /* 1 box */
 .box-text1 {
   overflow: hidden; /* Скрываем выходящий текст */
